@@ -106,7 +106,7 @@ function mostrarModelos(modelosVisibles = modelos) {
   if (!modelosVisibles.length) {
     const aviso = document.createElement("article");
     aviso.className = "catalogo-vacio";
-    aviso.innerHTML = `<span class="catalogo-vacio-icono">✳</span><p class="eyebrow eyebrow-oscuro">CATÁLOGO ${marcaActiva.toUpperCase()}</p><h3>Consultá los modelos disponibles</h3><p>Estamos preparando la galería de ${marcaActiva}. Escribile a Deyci y te comparte las opciones, fotos y precios disponibles.</p><a class="boton boton-azul consultar-marca" href="https://web.whatsapp.com/send?phone=595976791413" target="_blank" rel="noopener noreferrer">Consultar ${marcaActiva} por WhatsApp <span>↗</span></a>`;
+    aviso.innerHTML = `<span class="catalogo-vacio-icono">✳</span><p class="eyebrow eyebrow-oscuro">CATÁLOGO ${marcaActiva.toUpperCase()}</p><h3>Consultá los modelos disponibles</h3><p>Estamos preparando la galería de ${marcaActiva}. Escribile a Deyci y te comparte las opciones, fotos y precios disponibles.</p><a class="boton boton-azul consultar-marca" href="https://wa.me/595976791413">Consultar ${marcaActiva} por WhatsApp <span>↗</span></a>`;
     rejilla.appendChild(aviso);
     return;
   }
@@ -275,8 +275,8 @@ function mensajePresupuesto() {
 }
 
 function abrirWhatsAppPresupuesto() {
-  const url = `https://web.whatsapp.com/send?phone=595976791413&text=${encodeURIComponent(mensajePresupuesto())}`;
-  window.open(url, "_blank", "noopener,noreferrer");
+  const url = `https://wa.me/595976791413?text=${encodeURIComponent(mensajePresupuesto())}`;
+  window.location.assign(url);
 }
 
 tabs.forEach((tab) => tab.addEventListener("click", () => cambiarTipo(tab.dataset.tipo)));
