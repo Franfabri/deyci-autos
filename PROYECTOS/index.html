@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conocé opciones de vehículos 0 km de Hyundai, Geely e Isuzu con Deyci Ortiz, asesora de ventas multimarca.">
+  <meta name="theme-color" content="#061a35">
+
+
+  <title>Deyci Ortiz | Asesora de ventas multimarca</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="#inicio" aria-label="Deyci Ortiz, inicio"><img class="foto-marca" src="asesora-deyci.png" alt="Deyci Ortiz"><span class="marca-texto">DEYCI ORTIZ<small>ASESORA DE VENTAS MULTIMARCAS</small></span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="navegacion"><a href="#modelos">Modelos</a><a href="#asesora">Sobre mí</a><a class="nav-cta" href="#consulta">Consultar</a></nav>
+  </header>
+  <a class="whatsapp-flotante" href="https://web.whatsapp.com/send?phone=595976791413" target="_blank" rel="noopener noreferrer" aria-label="Escribile a Deyci Ortiz por WhatsApp al 0976 791 413">
+    <img src="asesora-deyci.png" alt="">
+    <span><small>¿HABLAMOS?</small><strong>0976 791 413</strong><em>WhatsApp directo ↗</em></span>
+  </a>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-fondo"></div>
+      <div class="hero-contenido">
+        <p class="eyebrow"><span></span> TU PRÓXIMO CAMINO COMIENZA ACÁ</p>
+        <h1>Encontrá tu próximo 0 km<br>ideal para vos.</h1>
+        <p class="hero-descripcion">Hyundai, Geely e Isuzu. Explorá las marcas y recibí una atención personalizada para elegir tu próximo vehículo.</p>
+        <div class="hero-acciones"><a class="boton boton-claro" href="#modelos">Explorar modelos <span>↘</span></a><a class="enlace-simple" href="#consulta">Quiero hacer una consulta <span>→</span></a></div>
+        <div class="hero-nota"><span class="punto-verde"></span> Asesoramiento cercano, de principio a fin</div>
+      </div>
+      <div class="hero-indicador"><span>01</span><i></i><span>03</span></div>
+    </section>
+
+    <section class="beneficios" aria-label="Beneficios de la asesoría">
+      <div><span class="beneficio-icono">✳</span><p><strong>Atención personal</strong><small>Te acompaño en cada paso</small></p></div>
+      <div><span class="beneficio-icono">◇</span><p><strong>Opciones a tu medida</strong><small>Contado o financiación</small></p></div>
+      <div><span class="beneficio-icono">↗</span><p><strong>Varias marcas</strong><small>Más alternativas para elegir</small></p></div>
+    </section>
+
+    <section class="modelos seccion" id="modelos">
+      <div class="encabezado-seccion"><div><p class="eyebrow eyebrow-oscuro">CATÁLOGO 0 KM</p><h2>Modelos para cada camino.</h2></div><p>Elegí una marca para ver su catálogo.<br>Consultá disponibilidad y versiones.</p></div>
+      <div class="filtros-marcas" role="group" aria-label="Filtrar catálogo por marca">
+        <button class="filtro-marca activo" type="button" data-marca="Hyundai" aria-pressed="true">Hyundai</button>
+        <button class="filtro-marca" type="button" data-marca="Geely" aria-pressed="false">Geely</button>
+        <button class="filtro-marca" type="button" data-marca="Isuzu" aria-pressed="false">Isuzu</button>
+      </div>
+      <p class="marca-seleccionada" id="marcaSeleccionada" aria-live="polite">Catálogo Hyundai</p>
+      <div class="rejilla-modelos" id="rejillaModelos"></div>
+    </section>
+
+    <section class="asesora" id="asesora">
+      <div class="foto-asesora entrega-galeria" role="region" aria-label="Entregas de vehículos realizadas por Deyci Ortiz">
+        <img class="entrega-foto activa" src="WhatsApp Image 2026-10-30 at 19.11.57.jpeg" alt="Deyci Ortiz junto a una clienta en la entrega de su vehículo" loading="lazy">
+        <img class="entrega-foto" src="WhatsApp Image 2026-10-30 at 19.12.22.jpeg" alt="Deyci acompaña a una clienta durante la entrega de su vehículo" loading="lazy">
+        <img class="entrega-foto" src="WhatsApp Image 2026-10-30 at 19.12.52.jpeg" alt="Clienta posa junto a su vehículo nuevo durante la entrega" loading="lazy">
+        <span class="foto-sello"><small>TU 0 KM TE ESTÁ ESPERANDO</small>¡La próxima entrega puede ser la tuya!</span>
+        <div class="entrega-indicadores" role="group" aria-label="Elegir foto de entrega">
+          <button type="button" class="activo" aria-label="Ver foto de entrega 1" aria-pressed="true"></button>
+          <button type="button" aria-label="Ver foto de entrega 2" aria-pressed="false"></button>
+          <button type="button" aria-label="Ver foto de entrega 3" aria-pressed="false"></button>
+        </div>
+      </div>
+      <div class="asesora-texto"><p class="eyebrow eyebrow-oscuro">UN GUSTO ACOMPAÑARTE</p><h2>Hola, soy Deyci.</h2><p class="asesora-intro">Estoy para ayudarte a encontrar el vehículo que encaje con tu vida y tu presupuesto.</p><p>Como asesora de ventas multimarca, puedo orientarte entre distintas opciones y explicarte con claridad las alternativas de compra. Contame qué estás buscando y lo vemos juntos.</p><a class="boton boton-azul" href="#consulta">Hablemos de tu próximo auto <span>→</span></a></div>
+    </section>
+
+    <section class="consulta seccion" id="consulta">
+      <div class="consulta-cabecera"><p class="eyebrow">EMPECEMOS POR LO QUE NECESITÁS</p><h2>Consultá por tu próximo 0 km.</h2><p>Seleccioná una opción y te preparo una propuesta personalizada.</p></div>
+      <div class="consulta-panel">
+        <div class="panel-compra" id="panelCompra" role="tabpanel" aria-labelledby="tabContado">
+          <div class="panel-texto"><p class="eyebrow eyebrow-oscuro" id="tipoEyebrow">COMPRA AL CONTADO</p><h3 id="tipoTitulo">¿Qué modelo te interesa?</h3><p id="tipoDescripcion">Consultá el precio contado y las versiones disponibles. Te respondo con los detalles.</p></div>
+          <form id="formConsulta">
+            <label class="etiqueta-modelo" for="modeloConsulta">Modelo de interés</label>
+            <select id="modeloConsulta" name="modelo" required><option value="">Seleccioná un modelo</option></select>
+            <p id="precioReferencia" class="precio-referencia" hidden></p>
+            <div id="camposFinanciacion" class="campos-financiacion" hidden><label for="entrega">Entrega inicial en guaraníes <span>(opcional)</span></label><input id="entrega" name="entrega" type="text" inputmode="numeric" autocomplete="off" placeholder="Ingresá el monto"><small class="ayuda-entrega">Si aún no lo sabés, dejá este campo vacío.</small></div>
+            <label for="nombre">Tu nombre</label><input id="nombre" name="nombre" type="text" placeholder="¿Cómo te llamás?" autocomplete="name" required>
+            <label for="contacto">Tu teléfono</label><input id="contacto" name="contacto" type="tel" placeholder="Tu número de contacto" autocomplete="tel" required>
+            <div class="pestanas pestanas-formulario" role="tablist" aria-label="Forma de compra">
+              <button class="pestana activa" id="tabContado" type="button" role="tab" aria-selected="true" aria-controls="panelCompra" data-tipo="contado"><span>01</span> Contado</button>
+              <button class="pestana" id="tabFinanciado" type="button" role="tab" aria-selected="false" aria-controls="panelCompra" data-tipo="financiado"><span>02</span> Crédito</button>
+            </div>
+            <button class="boton boton-verde enviar" type="submit">Preparar consulta <span>↗</span></button>
+            <small class="privacidad">Se abrirá tu WhatsApp con la consulta lista para que la envíes.</small>
+            <a class="whatsapp-directo" href="https://web.whatsapp.com/send?phone=595976791413" target="_blank" rel="noopener noreferrer"><span class="whatsapp-icono">✆</span> Escribime por WhatsApp <strong>0976 791 413</strong></a>
+          </form>
+        </div>
+      </div>
+      <p class="nota-precios">Los precios, versiones, disponibilidad y condiciones de financiación se confirman al momento de la consulta.</p>
+    </section>
+  </main>
+
+  <footer><a class="marca marca-footer" href="#inicio"><span class="marca-icono">H</span><span class="marca-texto">DEYCI ORTIZ<small>ASESORA DE VENTAS MULTIMARCAS</small></span></a><p>Encontramos juntos tu próximo camino.</p><a class="volver" href="#inicio">Volver arriba ↑</a></footer>
+  <dialog class="galeria-modal" id="galeriaModal" aria-label="Catálogo de fotos">
+    <div class="galeria-modal-cabecera"><div><small>CATÁLOGO DE FOTOS</small><strong id="nombreGaleriaModal">Hyundai</strong></div><button class="modal-cerrar" id="cerrarGaleria" type="button" aria-label="Cerrar galería">×</button></div>
+    <div class="galeria-modal-cuerpo"><button class="modal-flecha" id="fotoAnteriorModal" type="button" aria-label="Foto anterior">‹</button><img id="fotoGrande" src="creta-hyundai.png" alt="Hyundai"><button class="modal-flecha" id="fotoSiguienteModal" type="button" aria-label="Foto siguiente">›</button></div>
+    <div class="galeria-modal-pie"><span id="contadorFotosModal">1 / 4</span><div class="miniaturas" id="miniaturasModal" aria-label="Elegir foto"></div></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
