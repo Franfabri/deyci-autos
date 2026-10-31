@@ -4,12 +4,12 @@ const modelos = [
   { nombre: "Tucson", nombreVisible: "TUCSON LIMITED", tipo: "SUV", etiqueta: "ESPACIO Y DISEÑO", descripcion: "Espacio para compartir nuevas experiencias y llegar más lejos.", imagen: "WhatsApp Image 2026-10-27 at 07.38.44.jpeg", alt: "Hyundai Tucson Limited", precioContado: "US$ 40.990", cuotaDesde: "G. 5.400.000", financiacionEtiqueta: "CUOTAS DESDE", fotos: ["WhatsApp Image 2026-10-27 at 07.38.44.jpeg", "WhatsApp Image 2026-10-27 at 07.38.44 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.45.jpeg", "WhatsApp Image 2026-10-27 at 07.38.45 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.45 (2).jpeg", "WhatsApp Image 2026-10-27 at 07.38.46.jpeg", "WhatsApp Image 2026-10-27 at 07.38.46 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.46 (2).jpeg"] },
   { nombre: "Santa Fe", nombreVisible: "SANTA FE 2027", tipo: "SUV FAMILIAR", etiqueta: "PARA COMPARTIR", descripcion: "Confort y presencia para disfrutar cada viaje en familia.", imagen: "santa-fe-hyundai.png", alt: "Hyundai Santa Fe 2027 blanco junto al campo", precioContado: "US$ 45.990", cuotaDesde: "G. 6.000.000", financiacionEtiqueta: "CUOTAS DESDE", fotos: ["santa-fe-hyundai.png", "WhatsApp Image 2026-10-27 at 07.38.51.jpeg", "WhatsApp Image 2026-10-27 at 07.38.52 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.52 (2).jpeg", "WhatsApp Image 2026-10-27 at 07.38.52.jpeg", "WhatsApp Image 2026-10-27 at 07.38.53 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.53 (2).jpeg", "WhatsApp Image 2026-10-27 at 07.38.54.jpeg", "WhatsApp Image 2026-10-27 at 07.38.54 (2).jpeg", "WhatsApp Image 2026-10-27 at 07.38.55.jpeg"] },
   { nombre: "Kona", nombreVisible: "KONA", tipo: "SUV URBANA", etiqueta: "ESPÍRITU URBANO", descripcion: "Carácter propio y versatilidad para moverte a tu manera.", imagen: "WhatsApp Image 2026-10-27 at 07.38.48.jpeg", alt: "Hyundai Kona", precioContado: "US$ 31.990", cuotaDesde: "G. 4.200.000", financiacionEtiqueta: "CUOTAS DESDE", fotos: ["WhatsApp Image 2026-10-27 at 07.38.48.jpeg", "WhatsApp Image 2026-10-27 at 07.38.48 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.48 (2).jpeg", "WhatsApp Image 2026-10-27 at 07.38.48 (3).jpeg", "WhatsApp Image 2026-10-27 at 07.38.49.jpeg", "WhatsApp Image 2026-10-27 at 07.38.49 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.49 (2).jpeg", "WhatsApp Image 2026-10-27 at 07.38.50.jpeg", "WhatsApp Image 2026-10-27 at 07.38.50 (1).jpeg", "WhatsApp Image 2026-10-27 at 07.38.50 (2).jpeg"] },
-  { nombre: "Grand i10", tipo: "COMPACTO", etiqueta: "HECHO PARA VOS", descripcion: "Práctico, cómodo y listo para acompañarte en la ciudad.", imagen: "WhatsApp Image 2026-10-30 at 22.34.11 (1).jpeg", alt: "Hyundai Grand i10 blanco exhibido en un salón", fotos: ["WhatsApp Image 2026-10-30 at 22.34.11 (1).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11 (2).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11 (3).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11 (4).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11.jpeg"] }
+  { nombre: "Grand i10", tipo: "COMPACTO", etiqueta: "HECHO PARA VOS", descripcion: "Práctico, cómodo y listo para acompañarte en la ciudad.", imagen: "WhatsApp Image 2026-10-30 at 22.34.11 (1).jpeg", alt: "Hyundai Grand i10 blanco exhibido en un salón", precioContado: "US$ 15.490", fotos: ["WhatsApp Image 2026-10-30 at 22.34.11 (1).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11 (2).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11 (3).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11 (4).jpeg", "WhatsApp Image 2026-10-30 at 22.34.11.jpeg"] }
 ];
 
 const modelosGeely = [
   { nombre: "GX3 Pro", nombreVisible: "GEELY GX3 PRO", marca: "Geely", tipo: "SUV COMPACTA", etiqueta: "GEELY GX3 PRO", descripcion: "Diseño moderno, confort y versatilidad para tus recorridos diarios.", imagen: "WhatsApp Image 2026-10-30 at 18.57.54 (1).jpeg", alt: "Geely GX3 Pro negro exhibido en un salón", fotos: ["WhatsApp Image 2026-10-30 at 18.57.54 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.57.54.jpeg", "WhatsApp Image 2026-10-30 at 18.57.54 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.57.55.jpeg", "WhatsApp Image 2026-10-30 at 18.57.55 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.57.56 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.57.56.jpeg", "WhatsApp Image 2026-10-30 at 18.57.56 (1).jpeg"] },
-  { nombre: "Coolray Lite", nombreVisible: "GEELY COOLRAY LITE", marca: "Geely", tipo: "SUV COMPACTA", etiqueta: "NUEVO MODELO", descripcion: "Estilo deportivo, espacio y tecnología para acompañarte en cada recorrido.", imagen: "WhatsApp Image 2026-10-30 at 18.58.11 (1).jpeg", alt: "Geely Coolray Lite gris exhibido en un salón", fotos: ["WhatsApp Image 2026-10-30 at 18.58.11 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.58.11.jpeg", "WhatsApp Image 2026-10-30 at 18.58.11 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.58.12.jpeg", "WhatsApp Image 2026-10-30 at 18.58.12 (1).jpeg"] }
+  { nombre: "Coolray Lite", nombreVisible: "GEELY COOLRAY LITE", marca: "Geely", tipo: "SUV COMPACTA", etiqueta: "NUEVO MODELO", descripcion: "Estilo deportivo, espacio y tecnología para acompañarte en cada recorrido.", imagen: "WhatsApp Image 2026-10-30 at 18.58.11 (1).jpeg", alt: "Geely Coolray Lite gris exhibido en un salón", precioContado: "US$ 17.990", fotos: ["WhatsApp Image 2026-10-30 at 18.58.11 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.58.11.jpeg", "WhatsApp Image 2026-10-30 at 18.58.11 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.58.12.jpeg", "WhatsApp Image 2026-10-30 at 18.58.12 (1).jpeg"] }
 ];
 
 const modelosIsuzu = [
@@ -92,8 +92,9 @@ galeriaModal.addEventListener("click", (evento) => {
 function actualizarPrecioReferencia() {
   const modelo = Object.values(modelosPorMarca).flat().find((item) => item.nombre === selectorModelo.value);
   const referencia = document.getElementById("precioReferencia");
-  if (modelo?.precioContado && modelo?.cuotaDesde) {
-    referencia.textContent = `${modelo.nombreVisible || modelo.nombre} · Contado ${modelo.precioContado} · ${modelo.financiacionEtiqueta || "Cuota desde"} ${modelo.cuotaDesde}`;
+  if (modelo?.precioContado || modelo?.cuotaDesde) {
+    const precios = [modelo.precioContado && `Contado ${modelo.precioContado}`, modelo.cuotaDesde && `${modelo.financiacionEtiqueta || "Cuota desde"} ${modelo.cuotaDesde}`].filter(Boolean);
+    referencia.textContent = `${modelo.nombreVisible || modelo.nombre} · ${precios.join(" · ")}`;
     referencia.hidden = false;
   } else {
     referencia.textContent = "";
@@ -135,22 +136,27 @@ function mostrarModelos(modelosVisibles = modelos) {
     etiqueta.className = "modelo-tag";
     etiqueta.textContent = modelo.etiqueta;
     imagenWrap.append(imagen, etiqueta);
-    if (modelo.precioContado && modelo.cuotaDesde) {
+    if (modelo.precioContado || modelo.cuotaDesde) {
       precioImagen = document.createElement("div");
       precioImagen.className = "precio-imagen";
+      if (modelo.precioContado) {
       const contado = document.createElement("span");
       const etiquetaContado = document.createElement("small");
       etiquetaContado.textContent = "CONTADO";
       const valorContado = document.createElement("strong");
       valorContado.textContent = modelo.precioContado;
       contado.append(etiquetaContado, valorContado);
+      precioImagen.append(contado);
+      }
+      if (modelo.cuotaDesde) {
       const financiado = document.createElement("span");
       const etiquetaCuota = document.createElement("small");
       etiquetaCuota.textContent = modelo.financiacionEtiqueta || "CUOTA DESDE";
       const valorCuota = document.createElement("strong");
       valorCuota.textContent = modelo.cuotaDesde;
       financiado.append(etiquetaCuota, valorCuota);
-      precioImagen.append(contado, financiado);
+      precioImagen.append(financiado);
+      }
       imagenWrap.appendChild(precioImagen);
       if (imagen.complete && imagen.naturalWidth > 0) {
         mostrarPrecioTemporal();
