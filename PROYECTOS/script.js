@@ -8,7 +8,7 @@ const modelos = [
 ];
 
 const modelosGeely = [
-  { nombre: "GX3 Pro", nombreVisible: "GEELY GX3 PRO", marca: "Geely", tipo: "SUV COMPACTA", etiqueta: "GEELY GX3 PRO", descripcion: "Diseño moderno, confort y versatilidad para tus recorridos diarios.", imagen: "WhatsApp Image 2026-10-30 at 18.57.54 (1).jpeg", alt: "Geely GX3 Pro negro exhibido en un salón", fotos: ["WhatsApp Image 2026-10-30 at 18.57.54 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.57.54.jpeg", "WhatsApp Image 2026-10-30 at 18.57.54 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.57.55.jpeg", "WhatsApp Image 2026-10-30 at 18.57.55 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.57.56 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.57.56.jpeg", "WhatsApp Image 2026-10-30 at 18.57.56 (1).jpeg"] },
+  { nombre: "GX3 Pro", nombreVisible: "GEELY GX3 PRO", marca: "Geely", tipo: "SUV COMPACTA", etiqueta: "GEELY GX3 PRO", descripcion: "Diseño moderno, confort y versatilidad para tus recorridos diarios.", imagen: "WhatsApp Image 2026-10-30 at 18.57.54 (1).jpeg", alt: "Geely GX3 Pro negro exhibido en un salón", precioContado: "US$ 15.490", fotos: ["WhatsApp Image 2026-10-30 at 18.57.54 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.57.54.jpeg", "WhatsApp Image 2026-10-30 at 18.57.54 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.57.55.jpeg", "WhatsApp Image 2026-10-30 at 18.57.55 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.57.56 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.57.56.jpeg", "WhatsApp Image 2026-10-30 at 18.57.56 (1).jpeg"] },
   { nombre: "Coolray Lite", nombreVisible: "GEELY COOLRAY LITE", marca: "Geely", tipo: "SUV COMPACTA", etiqueta: "NUEVO MODELO", descripcion: "Estilo deportivo, espacio y tecnología para acompañarte en cada recorrido.", imagen: "WhatsApp Image 2026-10-30 at 18.58.11 (1).jpeg", alt: "Geely Coolray Lite gris exhibido en un salón", precioContado: "US$ 17.990", fotos: ["WhatsApp Image 2026-10-30 at 18.58.11 (1).jpeg", "WhatsApp Image 2026-10-30 at 18.58.11.jpeg", "WhatsApp Image 2026-10-30 at 18.58.11 (2).jpeg", "WhatsApp Image 2026-10-30 at 18.58.12.jpeg", "WhatsApp Image 2026-10-30 at 18.58.12 (1).jpeg"] }
 ];
 
@@ -140,22 +140,22 @@ function mostrarModelos(modelosVisibles = modelos) {
       precioImagen = document.createElement("div");
       precioImagen.className = "precio-imagen";
       if (modelo.precioContado) {
-      const contado = document.createElement("span");
-      const etiquetaContado = document.createElement("small");
-      etiquetaContado.textContent = "CONTADO";
-      const valorContado = document.createElement("strong");
-      valorContado.textContent = modelo.precioContado;
-      contado.append(etiquetaContado, valorContado);
-      precioImagen.append(contado);
+        const contado = document.createElement("span");
+        const etiquetaContado = document.createElement("small");
+        etiquetaContado.textContent = "CONTADO";
+        const valorContado = document.createElement("strong");
+        valorContado.textContent = modelo.precioContado;
+        contado.append(etiquetaContado, valorContado);
+        precioImagen.append(contado);
       }
       if (modelo.cuotaDesde) {
-      const financiado = document.createElement("span");
-      const etiquetaCuota = document.createElement("small");
-      etiquetaCuota.textContent = modelo.financiacionEtiqueta || "CUOTA DESDE";
-      const valorCuota = document.createElement("strong");
-      valorCuota.textContent = modelo.cuotaDesde;
-      financiado.append(etiquetaCuota, valorCuota);
-      precioImagen.append(financiado);
+        const financiado = document.createElement("span");
+        const etiquetaCuota = document.createElement("small");
+        etiquetaCuota.textContent = modelo.financiacionEtiqueta || "CUOTA DESDE";
+        const valorCuota = document.createElement("strong");
+        valorCuota.textContent = modelo.cuotaDesde;
+        financiado.append(etiquetaCuota, valorCuota);
+        precioImagen.append(financiado);
       }
       imagenWrap.appendChild(precioImagen);
       if (imagen.complete && imagen.naturalWidth > 0) {
