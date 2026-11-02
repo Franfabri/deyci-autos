@@ -371,14 +371,3 @@ window.setInterval(() => {
   }, 550);
 }, 5000);
 
-const promoBNF = document.getElementById("promoBNF");
-const fechaExpiracionPromoBNF = new Date("2026-11-09T09:00:00-03:00").getTime();
-const ocultarPromoBNF = () => {
-  promoBNF.classList.add("promo-bnf-oculta");
-  promoBNF.setAttribute("aria-hidden", "true");
-};
-if (Date.now() >= fechaExpiracionPromoBNF) {
-  ocultarPromoBNF();
-} else {
-  window.setTimeout(ocultarPromoBNF, fechaExpiracionPromoBNF - Date.now());
-}
