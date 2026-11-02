@@ -372,30 +372,13 @@ window.setInterval(() => {
 }, 5000);
 
 const promoBNF = document.getElementById("promoBNF");
-const cerrarPromoBNF = document.getElementById("cerrarPromoBNF");
 const fechaExpiracionPromoBNF = new Date("2026-11-09T23:59:59-03:00").getTime();
-const clavePromoBNF = "promo-bnf-2026-oculta";
-let promoBNFCerrada = false;
-try {
-  promoBNFCerrada = localStorage.getItem(clavePromoBNF) === "1";
-} catch {
-  // La promoción sigue funcionando aunque el navegador restrinja el almacenamiento local.
-}
 const ocultarPromoBNF = () => {
   promoBNF.classList.add("promo-bnf-oculta");
   promoBNF.setAttribute("aria-hidden", "true");
 };
-if (Date.now() >= fechaExpiracionPromoBNF || promoBNFCerrada) {
+if (Date.now() >= fechaExpiracionPromoBNF) {
   ocultarPromoBNF();
 } else {
   window.setTimeout(ocultarPromoBNF, fechaExpiracionPromoBNF - Date.now());
-  cerrarPromoBNF.addEventListener("click", () => {
-    promoBNF.classList.add("promo-bnf-saliendo");
-    try {
-      localStorage.setItem(clavePromoBNF, "1");
-    } catch {
-      // El botón de cierre también oculta la promoción sin almacenamiento local.
-    }
-    window.setTimeout(ocultarPromoBNF, 300);
-  });
 }
