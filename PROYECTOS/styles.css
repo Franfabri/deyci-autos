@@ -52,3 +52,7 @@
 @keyframes promo-bnf-flotar{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-7px) scale(1.012)}}
 @media(max-width:580px){.promo-bnf{gap:12px;margin:18px auto 24px}.promo-bnf-imagen{width:min(275px,76vw);max-height:50vh}.promo-bnf-consultar{min-height:43px;padding:0 20px;font-size:12px}}
 @media(prefers-reduced-motion:reduce){.promo-bnf,.promo-bnf-imagen{animation:none}}
+
+/* Da tiempo para ver el flyer antes de que aparezca el contacto flotante. */
+.whatsapp-flotante{animation-duration:30s;animation-delay:0s}
+@keyframes entrada-salida{0%,40%{transform:translateX(calc(-100% - 25px));opacity:0}48%,66%{transform:translateX(0);opacity:1}74%,100%{transform:translateX(calc(-100% - 25px));opacity:0}}
