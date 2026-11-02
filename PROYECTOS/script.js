@@ -372,7 +372,7 @@ window.setInterval(() => {
 }, 5000);
 
 const promoBNF = document.getElementById("promoBNF");
-const fechaExpiracionPromoBNF = new Date("2026-11-09T23:59:59-03:00").getTime();
+const fechaExpiracionPromoBNF = new Date("2026-11-09T09:00:00-03:00").getTime();
 const ocultarPromoBNF = () => {
   promoBNF.classList.add("promo-bnf-oculta");
   promoBNF.setAttribute("aria-hidden", "true");
