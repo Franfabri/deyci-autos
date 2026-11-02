@@ -42,10 +42,13 @@
 @media(max-width:580px){.foto-asesora .foto-sello{top:12px;bottom:auto}}
 
 /* Flyer BNF independiente, sin marco ni textos añadidos */
-.promo-bnf{display:flex;justify-content:center;align-items:center;width:100%;margin:24px auto 30px;padding:0;background:transparent;animation:promo-bnf-entrada .8s cubic-bezier(.2,.75,.25,1) both}
-.promo-bnf-imagen{display:block;width:min(430px,88vw);height:auto;max-height:74vh;object-fit:contain;filter:drop-shadow(0 10px 20px #10233d25);transform-origin:center;animation:promo-bnf-flotar 4s ease-in-out .8s infinite}
+.promo-bnf{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:15px;width:100%;margin:24px auto 30px;padding:0;background:transparent;animation:promo-bnf-entrada .8s cubic-bezier(.2,.75,.25,1) both}
+.promo-bnf-imagen{display:block;width:min(320px,74vw);height:auto;max-height:58vh;object-fit:contain;filter:drop-shadow(0 10px 20px #10233d25);transform-origin:center;animation:promo-bnf-flotar 4s ease-in-out .8s infinite}
+.promo-bnf-consultar{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;padding:0 22px;border-radius:5px;background:#061a35;color:#fff;text-decoration:none;font-size:13px;font-weight:750;box-shadow:0 6px 18px #061a3528;transition:transform .2s,background .2s,box-shadow .2s}
+.promo-bnf-consultar:hover{transform:translateY(-2px);background:#0b2d58;box-shadow:0 9px 22px #061a3538}
+.promo-bnf-consultar span{color:#b8e33d;font-size:17px}
 .promo-bnf.promo-bnf-oculta{display:none}
 @keyframes promo-bnf-entrada{from{opacity:0;transform:translateY(28px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes promo-bnf-flotar{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-7px) scale(1.012)}}
-@media(max-width:580px){.promo-bnf{margin:18px auto 24px}.promo-bnf-imagen{width:min(390px,92vw);max-height:68vh}}
+@media(max-width:580px){.promo-bnf{gap:12px;margin:18px auto 24px}.promo-bnf-imagen{width:min(275px,76vw);max-height:50vh}.promo-bnf-consultar{min-height:43px;padding:0 20px;font-size:12px}}
 @media(prefers-reduced-motion:reduce){.promo-bnf,.promo-bnf-imagen{animation:none}}
