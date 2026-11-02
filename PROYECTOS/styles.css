@@ -40,3 +40,25 @@
 .ayuda-entrega{margin-top:-3px;color:#718197;font-size:10px;line-height:1.45}
 .foto-asesora .foto-sello{top:18px;bottom:auto;background:rgba(184,227,61,.68);backdrop-filter:blur(4px);box-shadow:0 5px 18px #061a3526}
 @media(max-width:580px){.foto-asesora .foto-sello{top:12px;bottom:auto}}
+
+/* Promoción BNF temporal */
+.promo-bnf{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(170px,230px) 1fr;align-items:center;gap:clamp(22px,4vw,48px);width:min(1120px,90%);margin:34px auto 24px;padding:18px clamp(18px,4vw,44px) 18px 18px;overflow:hidden;border:1px solid #ead782;border-radius:9px;background:linear-gradient(115deg,#fff9df 0%,#fff 61%,#fff5c8 100%);box-shadow:0 12px 35px #0b203018;animation:promo-bnf-entrada .75s cubic-bezier(.2,.75,.25,1) both,promo-bnf-brillo 3.5s ease-in-out 1s 2}
+.promo-bnf::before{position:absolute;z-index:-1;top:0;bottom:0;left:0;width:6px;background:linear-gradient(#ffcf25,#e1a900);content:""}
+.promo-bnf-imagen{display:block;width:100%;max-height:340px;object-fit:contain;object-position:center;border-radius:5px;box-shadow:0 7px 22px #1c26351c}
+.promo-bnf-contenido{max-width:590px}
+.promo-bnf-etiqueta{display:flex;align-items:center;gap:8px;margin:0 0 12px;color:#886300;font-size:10px;font-weight:850;letter-spacing:1.3px}
+.promo-bnf-etiqueta span{width:8px;height:8px;border-radius:50%;background:#e6b800;box-shadow:0 0 0 4px #f8e69b}
+.promo-bnf-contenido h2{margin:0;color:#10233d;font-size:clamp(25px,4vw,42px);line-height:1.08;letter-spacing:-1px}
+.promo-bnf-contenido>p:not(.promo-bnf-etiqueta){margin:15px 0;color:#45566b;font-size:15px;line-height:1.6}
+.promo-bnf-contenido>p strong{color:#092d59;font-size:1.12em;font-weight:850;white-space:nowrap}
+.promo-bnf-contenido .promo-bnf-nota{margin:0 0 12px!important;color:#788394!important;font-size:10px!important;line-height:1.5!important}
+.promo-bnf-cerrar{position:absolute;top:10px;right:10px;z-index:2;width:34px;height:34px;border:1px solid #e8dfba;border-radius:50%;background:#ffffffd9;color:#304158;font-size:22px;line-height:1;cursor:pointer}
+.promo-bnf-cerrar:hover{background:#fff;color:#061a35}
+.promo-bnf.promo-bnf-oculta{display:none}
+.promo-bnf.promo-bnf-saliendo{animation:promo-bnf-salida .28s ease both}
+@keyframes promo-bnf-entrada{from{opacity:0;transform:translateY(22px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes promo-bnf-brillo{0%,100%{box-shadow:0 12px 35px #0b203018}50%{box-shadow:0 15px 42px #d6a90035}}
+@keyframes promo-bnf-salida{to{opacity:0;transform:translateY(12px);max-height:0;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0}}
+@media(max-width:680px){.promo-bnf{grid-template-columns:minmax(105px,34%) 1fr;gap:15px;width:90%;margin:22px auto 18px;padding:13px 37px 13px 13px}.promo-bnf-imagen{max-height:230px}.promo-bnf-etiqueta{font-size:8px;letter-spacing:.8px;line-height:1.35}.promo-bnf-contenido h2{font-size:clamp(20px,5.6vw,29px);letter-spacing:-.5px}.promo-bnf-contenido>p:not(.promo-bnf-etiqueta){margin:9px 0;font-size:12px;line-height:1.45}.promo-bnf-contenido>p strong{font-size:1.04em}.promo-bnf-contenido .promo-bnf-nota{font-size:9px!important}.promo-bnf .boton{min-height:41px;padding:0 12px;font-size:10px}.promo-bnf-cerrar{top:7px;right:7px;width:29px;height:29px}}
+@media(max-width:380px){.promo-bnf{grid-template-columns:90px 1fr;gap:12px}.promo-bnf-imagen{max-height:205px}.promo-bnf-contenido h2{font-size:19px}.promo-bnf-contenido>p:not(.promo-bnf-etiqueta){font-size:11px}}
+@media(prefers-reduced-motion:reduce){.promo-bnf{animation:none}.promo-bnf.promo-bnf-saliendo{animation:none}}
