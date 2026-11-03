@@ -41,3 +41,9 @@
 .foto-asesora .foto-sello{top:18px;bottom:auto;background:rgba(184,227,61,.68);backdrop-filter:blur(4px);box-shadow:0 5px 18px #061a3526}
 @media(max-width:580px){.foto-asesora .foto-sello{top:12px;bottom:auto}}
 
+
+/* Promoción HB20 flotante de entrada y salida */
+.promo-hb20-flotante{position:fixed;z-index:9;top:96px;left:14px;width:min(260px,calc(100vw - 28px));display:block;overflow:hidden;border-radius:9px;box-shadow:0 12px 32px #071d2f35;animation:promo-hb20-entrada-salida 14s ease-in-out infinite;transition:box-shadow .2s,transform .2s}.promo-hb20-flotante img{display:block;width:100%;height:auto;border-radius:9px}.promo-hb20-flotante:hover{animation-play-state:paused;transform:scale(1.02);box-shadow:0 16px 38px #071d2f4a}
+@keyframes promo-hb20-entrada-salida{0%,10%{transform:translateX(calc(-100% - 25px));opacity:0}17%,58%{transform:translateX(0);opacity:1}65%,100%{transform:translateX(calc(-100% - 25px));opacity:0}}
+@media(max-width:580px){.promo-hb20-flotante{top:80px;left:10px;width:min(190px,calc(100vw - 20px))}}
+@media(prefers-reduced-motion:reduce){.promo-hb20-flotante{animation:none;transform:none;opacity:1}}
